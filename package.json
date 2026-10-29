@@ -1,0 +1,14 @@
+{
+  "name": "dropbox-tetris-monorepo",
+  "version": "1.0.0",
+  "description": "DropBox Tetris - Retro Arcade Download Manager",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "node server/dist/index.js",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "test": "npx --prefix server tsx --test tests/**/*.test.ts"
+  }
+}

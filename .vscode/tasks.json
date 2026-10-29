@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev:server",
+      "path": "server",
+      "problemMatcher": [],
+      "label": "Start Backend Server",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "path": "client",
+      "problemMatcher": [],
+      "label": "Start Frontend Client",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      }
+    }
+  ]
+}
